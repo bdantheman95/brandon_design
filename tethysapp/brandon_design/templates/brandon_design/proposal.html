@@ -1,0 +1,25 @@
+{% extends "brandon_design/base.html" %}
+{% load tethys_gizmos %}
+
+{% block header_buttons %}
+  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+  </div>
+{% endblock %}
+
+{% block app_content %}
+  <h1>Proposal</h1>
+  <p>Below is Nerdalicious(TM)'s proposal:</p>
+
+<img src="../../../static/brandon_design/images/fiftiesproposal.jpeg">
+<embed src="../../../static/brandon_design/docs/proposal.pdf">
+
+
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+{% endblock %}
+
+{% block app_actions %}
+{% endblock %}
